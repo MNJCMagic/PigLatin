@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSString+NSString_PigLatinizer.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        
+        NSString *testString = @"this program behaves strangely and we should figure out how come";
+        NSLog(@"%@",[testString stringByPigLatinization]);
+
+        
     }
     return 0;
 }
